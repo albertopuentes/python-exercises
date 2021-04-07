@@ -1,3 +1,4 @@
+
 Data Types, Operators, and Variables Exercises
 
 # movie rental exercise
