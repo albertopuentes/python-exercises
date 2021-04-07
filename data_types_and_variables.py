@@ -27,10 +27,34 @@ Weekly_Pay = (Google_Pay * Google_hours_worked) + (Amazon_Pay * Amazon_hours_wor
 
 print(Weekly_Pay)
 
-# Enrollment Exercise
+# Enrollment Exercise (if statement is True then can enroll, if False then can't enroll)
+class_not_full = True
+no_conflict = True
 
 enroll = class_not_full and no_conflict
 
-# product 
+# product (if statement True offer can be applied, if False offer can't be applied)
 
-offer = (person_items >= 2 and not_expired) or premium_member
+person_items = x
+not_expired = True
+premium_member = True
+not_expirend = True
+
+offer_person = person_items >= 2 and not_expired
+offer_premium_member = premium_member and not_expired
+
+offer_either = (person_items >= 2 and not_expired) or (premium_member and not_expired)
+
+# Username and Password
+username = 'codeup'
+password = 'notastrongpassword'
+
+pass_user = (len(password) >= 5)
+pass_passwored = (len(username) <= 20)
+in_conflict = (username != password)
+
+print(pass_user, pass_password, in_conflict)
+
+
+
+
