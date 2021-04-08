@@ -53,6 +53,8 @@ pass_user = (len(password) >= 5)
 pass_passwored = (len(username) <= 20)
 in_conflict = (username != password)
 
+comb_works = pass_user and pass_password and in_conflict
+
 print(pass_user, pass_password, in_conflict)
 
 

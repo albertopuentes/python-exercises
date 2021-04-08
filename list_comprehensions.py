@@ -104,7 +104,11 @@ negative_numbers = [number for number in numbers if number < 0]
 
 print(negative_numbers)
 # Exercise 14 - use a list comprehension w/ a conditional in order to produce a list of numbers with 2 or more numerals
+<<<<<<< HEAD
 two_or_more = [x for x in numbers if len(str(x)) >= 2 and x > 0]
+=======
+two_or_more = [str(x) for x in numbers if len(str(x)) >= 2 and x > 0]
+>>>>>>> ea5fd57a4ecbebeb60b399d372cacf63435691ab
 
 print(two_or_more)
 
