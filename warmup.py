@@ -26,5 +26,17 @@ print(truck)
 
 # 3 
 
+trucks = [dict(make='toyota', model='tacoma'), 
+          dict(make='ford', model='F150'), 
+          dict(make='land rover', model ='range rover')]
+
+
+for truck in trucks:
+    truck['make'] = truck['make'].title()
+    truck['model'] = truck['model'].title()
+
+print(trucks)
+
+
 
 
