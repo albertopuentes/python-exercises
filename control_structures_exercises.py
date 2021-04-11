@@ -71,6 +71,19 @@ for n in range(1, 11):
 for n in range (1,10):
     print(str(n) * n)
 
-num_input = input('Give me an odd number between 1 and 50')
-while:
-    number_input 
+
+for n in range(1,51,2):
+    num_input = input('Please enter an odd number between 1 and 50')
+    if n % 2 == 1:
+        continue
+    print(f'Here is an odd number: {n}')
+
+    num_input = input('Please enter an odd number between 1 and 50')
+for num in range(1, 51, 2):
+    if num == int(num_input):
+        print(f'Yikes! Skipping number: {num}')
+    else:
+        print(f'Here is an odd number: {num}')
+    
+
+
