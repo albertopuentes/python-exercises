@@ -124,3 +124,21 @@ for n in range (1, 101, 1):
     else: 
         print(n)
 
+# 5
+while True:
+    grade_inp = input("Please enter a grade from 0 to 100")
+    if int(grade_inp) > 87:
+        print('A')
+    elif int(grade_inp) > 79 and int(grade_inp) < 88:
+        print('B')
+    elif int(grade_inp) > 66 and int(grade_inp) < 80:
+        print('C')
+    elif int(grade_inp) > 59 and int(grade_inp) < 60:
+        print('D')
+    else:
+        print('F')
+    cont_input = input("Would you like to continue?  Enter Y or N")
+    if cont_input.lower() != "y": 
+        break  
+
+# 6
