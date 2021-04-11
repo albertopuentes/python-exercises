@@ -1,4 +1,4 @@
-1.a.
+# 1.a.
 
 
     day_input = input('What day is it?')
@@ -7,7 +7,7 @@
     else:
         print('Not Monday')
 
-1.b. 
+# 1.b. 
 
 weekday = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
 
@@ -17,7 +17,7 @@ if day_input.lower() in weekday:
 else:
     print('Weekend')
 
-1.c. 
+# 1.c. 
 
 hours_worked = 45
 hourly_rate = 10
@@ -30,7 +30,7 @@ else:
 print(weekly_pay)
 
 
-2.a.
+# 2.a.
 
 i = 5
 while i <= 15:
@@ -62,7 +62,7 @@ while i >= 5:
     i += -5
 
 
-2.b
+# 2.b
 
 num_input = input('Give me a positive number')
 for n in range(1, 11):
@@ -71,6 +71,7 @@ for n in range(1, 11):
 for n in range (1,10):
     print(str(n) * n)
 
+# 2.c
 
 for n in range(1,51,2):
     num_input = input('Please enter an odd number between 1 and 50')
@@ -93,6 +94,8 @@ while num_input.isdigit() and int(num_input) > 0:
             print(n)
     else: break
 
+# 2.d.
+
 num_input = input('Please enter a positive number')
 while num_input.isdigit() and int(num_input) > 0:
     n = int(num_input)
@@ -100,7 +103,7 @@ while num_input.isdigit() and int(num_input) > 0:
         while n >= 1
         n += -1
            
-
+#2.e.
 
 num_input = input('Please enter a positive number')
 if num_input.isdigit() and int(num_input) > 0:
@@ -108,4 +111,16 @@ if num_input.isdigit() and int(num_input) > 0:
     while n >= 1:
         print(n)
         n += -1
+
+# 3.  FizzBuzz
+
+for n in range (1, 101, 1):
+    if n % 3 == 0: 
+        print("Fizz") 
+    if n % 5 == 0: 
+        print("Buzz") 
+    if n % 5 == 0 and n % 3 == 0: 
+        print("FizzBuzz") 
+    else: 
+        print(n)
 
