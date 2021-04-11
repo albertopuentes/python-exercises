@@ -134,3 +134,13 @@ for n in students:
 print(f'{count_light} students prefer light roast')
 print(f'{count_medium} students prefer medium roast')
 print(f'{count_dark} students prefer dark roast')
+
+#4) All students received 4 gradesß
+num_of_grades = [len(x['grades']) for x in students]
+print(num_of_grades)
+
+#5) 
+grade_sum = [sum(x['grades']) for x in students]
+grade_len = [len(x['grades']) for x in students]
+grade_avg = [x / y for x, y in zip(grade_sum, grade_len)]
+print(grade_avg)
