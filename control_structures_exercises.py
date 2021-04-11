@@ -142,3 +142,14 @@ while True:
         break  
 
 # 6
+
+books_read = [
+    dict(title = "Guns, Germs, and Steel", author = "Jared Diamond", genre = "Historical"),
+    dict(title = "Thinking Strategically", author = "Avinish Dixit", genre = "Educational"),
+    dict(title = "A History of God", author = "Alfred Knopf", genre = "Historical")
+    ]
+
+prompt = input('Please select either Historical or Educational genre')
+for x in books_read:
+    if x['genre'] == prompt:
+        print(x['title'])
