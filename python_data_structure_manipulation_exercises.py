@@ -144,3 +144,19 @@ grade_sum = [sum(x['grades']) for x in students]
 grade_len = [len(x['grades']) for x in students]
 grade_avg = [x / y for x, y in zip(grade_sum, grade_len)]
 print(grade_avg)
+
+#6)
+student_pets = [len(x['pets']) for x in students]
+print(student_pets)
+
+#7)
+ds_count = 0
+wd_count = 0
+for n in students:
+    if n["course"] == 'data science':
+        ds_count += 1
+    if n["course"] == 'web development':
+        wd_count += 1
+    
+print(f'{ds_count} of students in data science')
+print(f'{wd_count} of students in web development')
