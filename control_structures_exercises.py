@@ -84,7 +84,7 @@ for num in range(1, 51, 2):
         print(f'Yikes! Skipping number: {num}')
     else:
         print(f'Here is an odd number: {num}')
-        
+
     
 num_input = input('Please enter a positive number')
 while num_input.isdigit() and int(num_input) > 0:
@@ -92,6 +92,20 @@ while num_input.isdigit() and int(num_input) > 0:
         if n <= int(num_input):
             print(n)
     else: break
+
+num_input = input('Please enter a positive number')
+while num_input.isdigit() and int(num_input) > 0:
+    n = int(num_input)
+    for n in range(int(num_input), 1)
+        while n >= 1
+        n += -1
            
 
+
+num_input = input('Please enter a positive number')
+if num_input.isdigit() and int(num_input) > 0:
+    n = int(num_input)
+    while n >= 1:
+        print(n)
+        n += -1
 
