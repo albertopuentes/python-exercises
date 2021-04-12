@@ -218,3 +218,31 @@ print(f'{count_light} web development students prefer light roast')
 print(f'{count_medium} web development students prefer medium roast')
 print(f'{count_dark} web development students prefer dark roast')
 
+#12 the avg grade for students w/at least 2 pets is 83.8
+
+grades_2pets = []
+for n in students:
+    if len(n["pets"]) >= 2:
+        grades_2pets.append((sum(n["grades"]))/(len(n["grades"])))
+
+print(grades_2pets)
+print(len(grades_2pets))
+print(sum(grades_2pets)/len(grades_2pets))
+
+#13 1 student has 3 pets
+count = 0
+for n in students:
+    if len(n["pets"]) == 3:
+        count += 1
+
+print(count)
+
+#14 The avg grade for students w/0 pets is 82.125
+grades_2pets = []
+for n in students:
+    if len(n["pets"]) == 0:
+        grades_2pets.append((sum(n["grades"]))/(len(n["grades"])))
+
+print(grades_2pets)
+print(len(grades_2pets))
+print(sum(grades_2pets)/len(grades_2pets))
