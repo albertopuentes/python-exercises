@@ -175,4 +175,11 @@ for n in students:
 x = sum(web_pets)/len(web_pets)
 print(x)
 
-#9)
+#9) 5.444444444444445 is avg pet age for data science students
+pet_ages = []
+for n in students:
+    if n["course"] == "data science":
+        for n in n["pets"]:
+            pet_ages.append(n["age"])
+                    
+print(sum(pet_ages)/len(pet_ages))
