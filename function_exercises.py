@@ -63,3 +63,14 @@ def get_letter_grade(x):
         return 'F'
 
 get_letter_grade(55)
+
+# 9
+
+def remove_vowels(n):
+    vowel = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+    for x in n:
+        if x in vowel:
+            n = n.replace(x, "")
+    return n
+
+    
