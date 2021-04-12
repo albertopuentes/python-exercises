@@ -183,3 +183,38 @@ for n in students:
             pet_ages.append(n["age"])
                     
 print(sum(pet_ages)/len(pet_ages))
+
+# 10) the most frequent coffee preference for data science students is medium @ 4
+count_light = 0
+count_medium = 0
+count_dark = 0
+for n in students:
+    if n["course"] == 'data science':
+        if n["coffee_preference"] == 'light':
+           count_light += 1
+        if n["coffee_preference"] == 'medium':
+           count_medium += 1 
+        if n["coffee_preference"] == 'dark':
+           count_dark += 1 
+
+print(f'{count_light} data science students prefer light roast')
+print(f'{count_medium} data science students prefer medium roast')
+print(f'{count_dark} data science students prefer dark roast')
+
+# 11) the least frequent coffee preference for web dev students are medium & dark @ 2
+count_light = 0
+count_medium = 0
+count_dark = 0
+for n in students:
+    if n["course"] == 'web development':
+        if n["coffee_preference"] == 'light':
+           count_light += 1
+        if n["coffee_preference"] == 'medium':
+           count_medium += 1 
+        if n["coffee_preference"] == 'dark':
+           count_dark += 1 
+
+print(f'{count_light} web development students prefer light roast')
+print(f'{count_medium} web development students prefer medium roast')
+print(f'{count_dark} web development students prefer dark roast')
+
