@@ -246,3 +246,59 @@ for n in students:
 print(grades_2pets)
 print(len(grades_2pets))
 print(sum(grades_2pets)/len(grades_2pets))
+
+#15 81.17857142857143 is avg grade for Web Dev students
+#   84.67857142857143 is avg grade for Data Science students
+
+grades_wd = []
+grades_ds = []
+for n in students:
+    if n["course"] == "data science":
+        grades_ds.append((sum(n["grades"]))/(len(n["grades"])))
+    if n["course"] == "web development":
+        grades_wd.append((sum(n["grades"]))/(len(n["grades"])))
+
+print(f'{sum(grades_wd)/len(grades_wd)} is avg grade for Web Dev students')
+print(f'{sum(grades_ds)/len(grades_ds)} is avg grade for Data Science students')
+
+# 16 28.8 is avg grade range for dark coffee drinkers
+grade_range = []
+for n in students:
+    if n["coffee_preference"] == "dark":
+        grade_range.append((max(n["grades"]))-(min(n["grades"])))
+print(grade_range)
+print(f'{sum(grade_range)/len(grade_range)} is avg grade range for dark coffee drinkers') 
+
+# 17 1.1666666666666667 is avg pets for medium coffee drinkers
+num_pets = []
+for n in students:
+    if n["coffee_preference"] == "medium":
+        num_pets.append(len(n["pets"]))
+print(num_pets)
+print(f'{sum(num_pets)/len(num_pets)} is avg pets for medium coffee drinkers')
+
+# 18 horse is most common pet for web developers @ 4
+
+type_pets = []
+for n in students:
+    if n["course"] == "web development":
+        for n in n["pets"]:
+            type_pets.append(n["species"])
+print(type_pets)
+print(f'{max(type_pets)} is most common pet for web developers')
+
+# 19 13.642857142857142 is avg name length
+
+name_len = [len(n["student"]) for n in students]
+print(f'{sum(name_len)/len(name_len)} is avg name length')
+
+# 20 8 is highest pet age for light coffee drinkers
+
+pet_age = []
+
+for n in students:
+    if n["coffee_preference"] == 'light':
+        for n in n["pets"]:
+            pet_age.append(n["age"])
+
+print(f'{max(pet_age)} is highest pet age for light coffee drinkers')
