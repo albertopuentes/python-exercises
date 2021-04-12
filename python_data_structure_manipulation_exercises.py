@@ -117,9 +117,12 @@ students = [
     },
 ]
 
-# 1)
+# 1) 14 students
 print(len(students))
-# 2)
+
+# 2)3 students prefer light roast
+# 6 students prefer medium roast
+# 5 students prefer dark roast
 count_light = 0
 count_medium = 0
 count_dark = 0
@@ -135,21 +138,23 @@ print(f'{count_light} students prefer light roast')
 print(f'{count_medium} students prefer medium roast')
 print(f'{count_dark} students prefer dark roast')
 
-#4) All students received 4 gradesß
+#4) All students received 4 grades [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 num_of_grades = [len(x['grades']) for x in students]
 print(num_of_grades)
 
-#5) 
+#5) [78.5, 83.5, 73.25, 78.5, 81.5, 80.75, 84.5, 88.75, 88.75, 82.5, 81.5, 91.0, 79.0, 89.0]
+# average grade for each student
+
 grade_sum = [sum(x['grades']) for x in students]
 grade_len = [len(x['grades']) for x in students]
 grade_avg = [x / y for x, y in zip(grade_sum, grade_len)]
 print(grade_avg)
 
-#6)
+#6) [1, 0, 1, 2, 3, 0, 1, 2, 2, 1, 2, 1, 1, 1] is list of number of pets each student has
 student_pets = [len(x['pets']) for x in students]
 print(student_pets)
 
-#7)
+#7) 7 students in the data science course & 7 students in the web development course
 ds_count = 0
 wd_count = 0
 for n in students:
@@ -160,3 +165,14 @@ for n in students:
     
 print(f'{ds_count} of students in data science')
 print(f'{wd_count} of students in web development')
+
+#8) 1.2857142857142858 is average number of pets for students in web development
+web_pets = []
+for n in students:
+    if n["course"] == 'web development':
+        web_pets.append(len(n['pets'])) 
+
+x = sum(web_pets)/len(web_pets)
+print(x)
+
+#9)
