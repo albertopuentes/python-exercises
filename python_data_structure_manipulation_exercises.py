@@ -138,6 +138,25 @@ print(f'{count_light} students prefer light roast')
 print(f'{count_medium} students prefer medium roast')
 print(f'{count_dark} students prefer dark roast')
 
+#3) 3 dogs, 4 horses & 11 cats
+
+Dog = 0
+Horse = 0
+Cat = 0
+
+for n in students:
+    for n in n["pets"]:
+        if n["species"] == 'dog':
+            Dog += 1
+        if n["species"] == 'horse':
+            Horse += 1
+        if n["species"] == 'cat':
+            Cat += 1
+            
+print(f'{Dog} dogs')
+print(f'{Horse} horses')
+print(f'{Cat} cats')
+
 #4) All students received 4 grades [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
 num_of_grades = [len(x['grades']) for x in students]
 print(num_of_grades)
