@@ -79,8 +79,12 @@ def normalize_name(x):
     x = x.lower()
     x = x.strip()
     x = x.replace(" ", "_")
-    if x[0] != x.isalpha():
-        return x[1:]
+    for y in x:
+        if y.isalnum() == False and y != "_":
+            x = x.replace(y, "")
+    while x[0].isdigit() and x[0] != "_":
+        x = x[1:]
+    return x
 
 
 
