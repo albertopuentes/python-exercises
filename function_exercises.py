@@ -85,7 +85,11 @@ def normalize_name(x):
     while x[0].isdigit() and x[0] != "_":
         x = x[1:]
     return x
+# 11 
 
+def cumulative_sum(x):
+    x = [sum(x[:i]) for i in range(1, len(x)+1)]
+    return x
 
 
 
