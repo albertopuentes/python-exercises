@@ -21,3 +21,11 @@ print(len(list(combinations('abcd', 2))))
 from itertools import permutations
 print(len(list(permutations('abcd', 2))))
 
+# 3
+
+import json
+
+json.load(open('profiles.json'))
+
+profiles.listdir()
+
