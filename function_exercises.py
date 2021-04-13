@@ -47,7 +47,7 @@ def apply_discount(price, discount):
 def handle_commas(n):
     n = n.replace(',', '')
     return int(n)
-handle_commas('2,000')
+
 
 # 8
 def get_letter_grade(x):
@@ -72,5 +72,17 @@ def remove_vowels(n):
         if x in vowel:
             n = n.replace(x, "")
     return n
+
+# 10
+
+def normalize_name(x):
+    x = x.lower()
+    x = x.strip()
+    x = x.replace(" ", "_")
+    if x[0] != x.isalpha():
+        return x[1:]
+
+
+
 
     
